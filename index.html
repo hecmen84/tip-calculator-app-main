@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+    <div class="box-column box-column-left">
+      <label for="textBox">Bill</label>
+      <div class="text-container">
+        <span><img src="images/icon-dollar.svg" alt=""></span>
+        <input type="text" name="bill" id="bill">
+      </div>
+      <div class="tip-header">
+        Select Tip %
+      </div>
+      <ul class="tip-button-container">
+        <li class="tip-button">
+            <input type="radio" name="tip" id="t5" value="5">
+            <label for="t5">5%</label>
+        </li>
+        <li class="tip-button">
+            <input type="radio" name="tip" id="t10" value="10">
+            <label for="t10">10%</label>
+        </li>
+        <li class="tip-button">
+            <input type="radio" name="tip" id="t15" value="15">
+            <label for="t15">15%</label>
+        </li>
+        <li class="tip-button">
+            <input type="radio" name="tip" id="t20" value="20">
+            <label for="t20">20%</label>
+        </li>
+        <li>
+          <input type="text" placeholder="Otro">
+        </li>
+        
+        
+      </ul>
+      <div class="spacer"></div>
+      <label for="textBox">Number of people</label>
+      <div class="text-container">
+        <span><img src="images/icon-person.svg" alt=""></span>
+        <input type="text" name="people" id="people">
+      </div>
+    </div>
+    <div class="box-column box-column-right">
+      <div class="display-container">
+        <div class="textual">
+          <p>Tip amount</p>
+          <span> / Person</span>
+        </div>
+        <div class="numeric" id='displayTip'>$ 0.0</div>
+      </div>
+      <div class="display-container">
+          <div class="textual">
+              <p>Total</p>
+              <span> / Person</span>
+          </div>
+          <div class="numeric" id="displayTotal">$ 0.0</div>
+      </div>
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+      <button class="reset">RESET</button>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
